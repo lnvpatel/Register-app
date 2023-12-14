@@ -41,7 +41,7 @@ pipeline {
         }
         
         stage("Quality Gate"){
-            steps{
+            steps {
                 script {
                     waitForQualityGate abortPipeline: false, credentialsId: 'JenkinsSonarQubetoken'
                 }
