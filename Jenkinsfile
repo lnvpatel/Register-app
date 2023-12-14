@@ -35,9 +35,9 @@ pipeline {
                scripts{
                  withSonarCubeENV(credentialID: 'JenkinsSonarQubetoken') {
                  sh "mvn sonar:sonar"
-                 }
-               }
-           }
-       }
+                     }
+                }
+            }
+        }
     }
 }
